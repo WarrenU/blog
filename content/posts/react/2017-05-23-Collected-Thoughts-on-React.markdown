@@ -16,7 +16,7 @@ React components can be thought of as factories. They are objects written to cre
 
 to create a class based component you just need to access React.Component.
 example:
-{% highlight ruby %}
+{{<highlight javascript>}}
 import React, {Component} from 'react';
 
 class ExampleComponent extends Component{
@@ -27,13 +27,13 @@ class ExampleComponent extends Component{
 
 export default ExampleComponent
 
-{% endhighlight %}
+{{</highlight>}}
 
 When you create a class based component you at minimum need to have a render function. At the end of your component you can export it so that you can then import it in your app/index.js (as an example), where your application is 'sewn' together.
 
 States are react-tant to user events. When a component state is changed (on a user event for example), render gets called. In order to create a state within a class, you need to initialize it in the constructor.
 
-{% highlight ruby %}
+{{<highlight html>}}
 class MyReactComponent extends Component{
   constructor(props){
     super(props);
@@ -48,16 +48,16 @@ class MyReactComponent extends Component{
     );
   }
 }
-{% endhighlight %}
+{{</highlight>}}
 
 
 You absolutely should use self closing tags with JSX: <MyComponent />. You can even pass parameters into these components: <MyComponent item={myitem} />.
 
 To implement your componetns, you basically just attach it to a class, or id etc via a selector.:
 
-{% highlight ruby %}
+{{<highlight html>}}
 ReactDOM.render(<AppComponent1 />, document.querySelector('.container'));
-{% endhighlight %}
+{{</highlight>}}
 
 The above code is creating an instance of the AppComponent1 and is attaching it to a class called container.
 

@@ -8,9 +8,9 @@ Welcome to my first blog post!
 
 When using django's shell plus command:
 
-{% highlight ruby %}
+{{< highlight html >}}
 django python manage.py shell_plus
-{% endhighlight %}
+{{< /highlight >}}
 
 You will get your application's database models pre-imported into an interactive python shell.
 If you haven't used it before it is really handy and nifty for hackin'.
@@ -20,26 +20,26 @@ You Can.
 
 For example: If you want to preimport a model before the shell plus imports you could do:
 
-{% highlight ruby %}
+{{< highlight html >}}
 SHELL_PLUS_PRE_IMPORTS = (
     ('project.app.models', 'Car')
 )
-{% endhighlight %}
+{{< /highlight >}}
 
 To import after the shell plus imports you simply change the variable to SHELL_PLUS_POST_IMPORTS:
-{% highlight ruby %}
+{{< highlight html >}}
 SHELL_PLUS_POST_IMPORTS = (
     ('project.app.models', 'Person')
 )
-{% endhighlight %}
+{{< /highlight >}}
 
 This is helpful if you have a model name that conflicts with an app that is imported from Shell Plus.
 
 You can also command it to skip imports entirely:
 You pass it a list of apps and or a model from an app as so:
-{% highlight ruby %}
+{{< highlight html >}}
 SHELL_PLUS_DONT_LOAD = ['app', 'app1.Car']
-{% endhighlight %}
+{{< /highlight >}}
 
 So the above is ignoring app's imports entirely and from app1 will not import model1.
 
