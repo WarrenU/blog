@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Warren&#39;s Blog</title>
+    <link>https://wurbina.com/</link>
+    <description>Recent content on Warren&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 May 2017 22:00:42 -0800</lastBuildDate>
+    
+	<atom:link href="https://wurbina.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Collected Thoughts on React</title>
+      <link>https://wurbina.com/posts/react/2017-05-23-collected-thoughts-on-react/</link>
+      <pubDate>Tue, 23 May 2017 22:00:42 -0800</pubDate>
+      
+      <guid>https://wurbina.com/posts/react/2017-05-23-collected-thoughts-on-react/</guid>
+      <description>Recently I have picked up a course from Udemy on React &amp;amp; Redux. I currently am working on making components similar to YouTube&amp;rsquo;s app. It is a YouTube video search app.
+This project can be found here: React YouTube Project
+This involves 5 components, 2 Functional React components, and 3 Class based components. This app pulls videos from YouTube using their API. There is a search bar component that will update a state and call the YouTube search api to look for videos matching the search criteria.</description>
+    </item>
+    
+    <item>
+      <title>Isolation Tank</title>
+      <link>https://wurbina.com/posts/life/2017-01-29-isolation-tank/</link>
+      <pubDate>Sun, 29 Jan 2017 18:30:42 -0800</pubDate>
+      
+      <guid>https://wurbina.com/posts/life/2017-01-29-isolation-tank/</guid>
+      <description>Today I went into a sensory deprivation isolation tank.
+It was a great and relaxing experience. I recommend it.
+I went with my brother. We walked in and signed a paper basically saying &amp;lsquo;you can&amp;rsquo;t sue us&amp;rsquo;.
+There was a notebook on the table where others could write out their experiences of their floats. People drew and wrote funny things about their floats. One of my favorites was: &amp;ldquo;Death is no longer a fear.</description>
+    </item>
+    
+  </channel>
+</rss>
