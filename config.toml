@@ -4,6 +4,7 @@ title = "Warren's Blog"
 theme = "ananke"
 SectionPagesMenu = "main"
 defaultLayout = "post"
+
 [params]
   github = "https://github.com/WarrenU"
   linkedin = "https://www.linkedin.com/in/urbinawarren/"
