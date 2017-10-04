@@ -1,7 +1,6 @@
 ---
 title:  "Django Shell Plus Imports"
 date:   2017-01-25 20:19:42 -0800
-draft: true
 ---
 
 Welcome to my first blog post!

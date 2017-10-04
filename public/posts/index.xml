@@ -34,5 +34,18 @@ I went with my brother. We walked in and signed a paper basically saying &amp;ls
 There was a notebook on the table where others could write out their experiences of their floats. People drew and wrote funny things about their floats. One of my favorites was: &amp;ldquo;Death is no longer a fear.</description>
     </item>
     
+    <item>
+      <title>Django Shell Plus Imports</title>
+      <link>https://wurbina.com/posts/django/2017-01-25-django-shellplus/</link>
+      <pubDate>Wed, 25 Jan 2017 20:19:42 -0800</pubDate>
+      
+      <guid>https://wurbina.com/posts/django/2017-01-25-django-shellplus/</guid>
+      <description>Welcome to my first blog post!
+When using django&amp;rsquo;s shell plus command:
+django python manage.py shell_plus  You will get your application&amp;rsquo;s database models pre-imported into an interactive python shell. If you haven&amp;rsquo;t used it before it is really handy and nifty for hackin&amp;rsquo;.
+But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
+For example: If you want to preimport a model before the shell plus imports you could do:</description>
+    </item>
+    
   </channel>
 </rss>
