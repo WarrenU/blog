@@ -6,10 +6,20 @@
     <description>Recent content on Warren&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 May 2017 22:00:42 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 21:44:04 -0800</lastBuildDate>
     
 	<atom:link href="https://wurbina.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React Native Install</title>
+      <link>https://wurbina.com/posts/react/react-native-install/</link>
+      <pubDate>Sat, 10 Feb 2018 21:44:04 -0800</pubDate>
+      
+      <guid>https://wurbina.com/posts/react/react-native-install/</guid>
+      <description>This post will cover React Native, and how to get started.
+What is React Native? It is a javascript framework that allows you to write mobile applications with Javascript. The JS code you write will be converted to become native code on iOS/Android. Mobile devices create an environment that will interpret the javascript in a React style. So For example, when using a  component within your React-Native app, upon loading,  will resolve to UIView on iOS and on Android, android.</description>
+    </item>
     
     <item>
       <title>Collected Thoughts on React</title>
