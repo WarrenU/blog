@@ -23,11 +23,9 @@
     
 
     <meta property="og:title" content="Django Shell Plus Imports" />
-<meta property="og:description" content="Welcome to my first blog post!
-When using django&rsquo;s shell plus command:
-django python manage.py shell_plus You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
-But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
-For example: If you want to preimport a model before the shell plus imports you could do:" />
+<meta property="og:description" content="The topic of this blog is about controlling import order resolution when using the django extension, shell_plus: http://django-extensions.readthedocs.io/en/latest/shell_plus.html
+Shell plus is an interactive python shell that will load in your apps DB models:
+django python manage.py shell_plus When you do this, by default, all of your app&rsquo;s models will be imported. But, there is a way you can control which models get imported, and the order in which they do. For example: If you want to preimport a model/module before the shell plus imports, you should add the following to your configuration file in your django project:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wurbina.com/posts/django/2017-01-25-django-shellplus/" />
 
@@ -48,27 +46,23 @@ For example: If you want to preimport a model before the shell plus imports you 
 
 
 <meta itemprop="name" content="Django Shell Plus Imports">
-<meta itemprop="description" content="Welcome to my first blog post!
-When using django&rsquo;s shell plus command:
-django python manage.py shell_plus You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
-But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
-For example: If you want to preimport a model before the shell plus imports you could do:">
+<meta itemprop="description" content="The topic of this blog is about controlling import order resolution when using the django extension, shell_plus: http://django-extensions.readthedocs.io/en/latest/shell_plus.html
+Shell plus is an interactive python shell that will load in your apps DB models:
+django python manage.py shell_plus When you do this, by default, all of your app&rsquo;s models will be imported. But, there is a way you can control which models get imported, and the order in which they do. For example: If you want to preimport a model/module before the shell plus imports, you should add the following to your configuration file in your django project:">
 
 
 <meta itemprop="datePublished" content="2017-01-25T20:19:42-08:00" />
 <meta itemprop="dateModified" content="2017-01-25T20:19:42-08:00" />
-<meta itemprop="wordCount" content="179">
+<meta itemprop="wordCount" content="222">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Django Shell Plus Imports"/>
-<meta name="twitter:description" content="Welcome to my first blog post!
-When using django&rsquo;s shell plus command:
-django python manage.py shell_plus You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
-But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
-For example: If you want to preimport a model before the shell plus imports you could do:"/>
+<meta name="twitter:description" content="The topic of this blog is about controlling import order resolution when using the django extension, shell_plus: http://django-extensions.readthedocs.io/en/latest/shell_plus.html
+Shell plus is an interactive python shell that will load in your apps DB models:
+django python manage.py shell_plus When you do this, by default, all of your app&rsquo;s models will be imported. But, there is a way you can control which models get imported, and the order in which they do. For example: If you want to preimport a model/module before the shell plus imports, you should add the following to your configuration file in your django project:"/>
 
   </head>
 
@@ -145,19 +139,17 @@ For example: If you want to preimport a model before the shell plus imports you 
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        <p>Welcome to my first blog post!</p>
+        <p>The topic of this blog is about controlling import order resolution when using the django extension, shell_plus:
+<a href="http://django-extensions.readthedocs.io/en/latest/shell_plus.html">http://django-extensions.readthedocs.io/en/latest/shell_plus.html</a></p>
 
-<p>When using django&rsquo;s shell plus command:</p>
+<p>Shell plus is an interactive python shell that will load in your apps DB models:</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">django python manage.py shell_plus</code></pre></div>
 
-<p>You will get your application&rsquo;s database models pre-imported into an interactive python shell.
-If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.</p>
-
-<p>But have you ever wanted to change the order in which the shell imports these apps/models?
-You Can.</p>
-
-<p>For example: If you want to preimport a model before the shell plus imports you could do:</p>
+<p>When you do this, by default, all of your app&rsquo;s models will be imported.
+But, there is a way you can control which models get imported, and the order in which they do.
+For example: If you want to preimport a model/module before the shell plus imports,
+you should add the following to your configuration file in your django project:</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">SHELL_PLUS_PRE_IMPORTS = (
     (&#39;project.app.models&#39;, &#39;Car&#39;)
@@ -168,16 +160,15 @@ You Can.</p>
     (&#39;project.app.models&#39;, &#39;Person&#39;)
 )</code></pre></div></p>
 
-<p>This is helpful if you have a model name that conflicts with an app that is imported from Shell Plus.</p>
+<p>This is helpful if you have a dependency or conflicting namespace (uh-oh! ideally you wouldn&rsquo;t).</p>
 
-<p>You can also command it to skip imports entirely:
-You pass it a list of apps and or a model from an app as so:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">SHELL_PLUS_DONT_LOAD = [&#39;app&#39;, &#39;app1.Car&#39;]</code></pre></div></p>
-
-<p>So the above is ignoring app&rsquo;s imports entirely and from app1 will not import model1.</p>
-
-<p>More on shell plus can be found @ the documentation
-<a href="http://django-extensions.readthedocs.io/en/latest/shell_plus.html">http://django-extensions.readthedocs.io/en/latest/shell_plus.html</a></p>
+<p>You can also configure shell_plus to not import parts of your app:
+Let&rsquo;s say we have an app called: Vehicles, which contains 2 model classes: &ldquo;Car&rdquo; and &ldquo;Boat&rdquo;.
+You can configure shell plus to not load &ldquo;Car&rdquo; for example:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">SHELL_PLUS_DONT_LOAD = [&#39;vehicles.Car&#39;]</code></pre></div>
+In the above example, the Vehicles.Car model will not be imported, but other Models from the Vehicles app will (Boat).
+You can provide mutliples to this configuration, and even include a whole app, let&rsquo;s say a &lsquo;documents&rsquo; app:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">SHELL_PLUS_DONT_LOAD = [&#39;documents&#39;, &#39;vehicles.Car&#39;]</code></pre></div></p>
 
       </div>
     </article>

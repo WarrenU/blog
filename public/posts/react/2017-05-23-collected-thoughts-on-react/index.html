@@ -53,7 +53,7 @@ This involves 5 components, 2 Functional React components, and 3 Class based com
 
 <meta itemprop="datePublished" content="2017-05-23T22:00:42-08:00" />
 <meta itemprop="dateModified" content="2017-05-23T22:00:42-08:00" />
-<meta itemprop="wordCount" content="414">
+<meta itemprop="wordCount" content="390">
 
 
 
@@ -152,11 +152,11 @@ This involves 5 components, 2 Functional React components, and 3 Class based com
 
 <p>to create a class based component you just need to access React.Component.
 example:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, {<span style="color:#a6e22e">Component</span>} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, {<span style="color:#a6e22e">Component</span>} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExampleComponent</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span>{
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExampleComponent</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
   <span style="color:#a6e22e">render</span>(){
-    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Example</span><span style="color:#f92672">!&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;;</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Example</span><span style="color:#f92672">!&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
   }
 }
 
@@ -166,30 +166,37 @@ example:
 
 <p>States are react-tant to user events. When a component state is changed (on a user event for example), render gets called. In order to create a state within a class, you need to initialize it in the constructor.</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">class MyReactComponent extends Component{
-  constructor(props){
-    super(props);
-    this.state = {term: &#39;&#39;};
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, {<span style="color:#a6e22e">Component</span>} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyReactComponent</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span>{
+  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>){
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>)
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">term</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>}
   }
 
-  render(){
-    return(
-      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">onChange</span><span style="color:#f92672">=</span><span style="color:#e6db74">{(event)</span> <span style="color:#960050;background-color:#1e0010">=</span>&gt; this.setState(term: event.target.value)} /&gt;;
-
-      &lt;<span style="color:#f92672">div</span>&gt;Value of input: {this.state.term}&lt;/<span style="color:#f92672">div</span>&gt;
-    );
+  <span style="color:#a6e22e">render</span>(){
+    <span style="color:#66d9ef">return</span>(
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">input</span> <span style="color:#a6e22e">onChange</span><span style="color:#f92672">=</span>{(<span style="color:#a6e22e">event</span>) =&gt; <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>(<span style="color:#a6e22e">term</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>)}<span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Value</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">input</span><span style="color:#f92672">:</span> {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">term</span>}<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+    )
   }
 }</code></pre></div>
 
-<p>You absolutely should use self closing tags with JSX: <MyComponent />. You can even pass parameters into these components: <MyComponent item={myitem} />.</p>
+<p>Self closing tags with JSX are sick!</p>
 
-<p>To implement your componetns, you basically just attach it to a class, or id etc via a selector.:</p>
+<p>Exhibit A:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">ReactDOM.render(&lt;<span style="color:#f92672">AppComponent1</span> /&gt;, document.querySelector(&#39;.container&#39;));</code></pre></div>
+<p><code>&lt;MyComponent {...props}/&gt;</code></p>
+
+<p>Exhibit B:</p>
+
+<p><code>&lt;MyComponent item={myitem} /&gt;</code>.</p>
+
+<p>To implement your components, attach it to a class, or id etc via a selector:</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppComponent1</span><span style="color:#f92672">&gt;</span>, document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;.container&#39;</span>))</code></pre></div></p>
 
 <p>The above code is creating an instance of the AppComponent1 and is attaching it to a class called container.</p>
-
-<p>These are my initial collection of thoughts. I am still learning React, but think it is very clean and fun to use.</p>
 
       </div>
     </article>

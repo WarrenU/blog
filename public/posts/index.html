@@ -180,11 +180,9 @@ There was a notebook on the table where others could write out their experiences
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Welcome to my first blog post!
-When using django&rsquo;s shell plus command:
-django python manage.py shell_plus You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
-But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
-For example: If you want to preimport a model before the shell plus imports you could do:
+      The topic of this blog is about controlling import order resolution when using the django extension, shell_plus: http://django-extensions.readthedocs.io/en/latest/shell_plus.html
+Shell plus is an interactive python shell that will load in your apps DB models:
+django python manage.py shell_plus When you do this, by default, all of your app&rsquo;s models will be imported. But, there is a way you can control which models get imported, and the order in which they do. For example: If you want to preimport a model/module before the shell plus imports, you should add the following to your configuration file in your django project:
     </div>
   </div>
 </div>
