@@ -9,7 +9,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.29" />
+    <meta name="generator" content="Hugo 0.35" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -25,7 +25,7 @@
     <meta property="og:title" content="Django Shell Plus Imports" />
 <meta property="og:description" content="Welcome to my first blog post!
 When using django&rsquo;s shell plus command:
-django python manage.py shell_plus  You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
+django python manage.py shell_plus You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
 But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
 For example: If you want to preimport a model before the shell plus imports you could do:" />
 <meta property="og:type" content="article" />
@@ -34,6 +34,7 @@ For example: If you want to preimport a model before the shell plus imports you 
 
 
 <meta property="article:published_time" content="2017-01-25T20:19:42-08:00"/>
+
 <meta property="article:modified_time" content="2017-01-25T20:19:42-08:00"/>
 
 
@@ -49,21 +50,23 @@ For example: If you want to preimport a model before the shell plus imports you 
 <meta itemprop="name" content="Django Shell Plus Imports">
 <meta itemprop="description" content="Welcome to my first blog post!
 When using django&rsquo;s shell plus command:
-django python manage.py shell_plus  You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
+django python manage.py shell_plus You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
 But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
 For example: If you want to preimport a model before the shell plus imports you could do:">
 
 
+<meta itemprop="datePublished" content="2017-01-25T20:19:42-08:00" />
 <meta itemprop="dateModified" content="2017-01-25T20:19:42-08:00" />
 <meta itemprop="wordCount" content="179">
 
 
 
 <meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Django Shell Plus Imports"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Django Shell Plus Imports"/>
 <meta name="twitter:description" content="Welcome to my first blog post!
 When using django&rsquo;s shell plus command:
-django python manage.py shell_plus  You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
+django python manage.py shell_plus You will get your application&rsquo;s database models pre-imported into an interactive python shell. If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.
 But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
 For example: If you want to preimport a model before the shell plus imports you could do:"/>
 
@@ -107,8 +110,9 @@ For example: If you want to preimport a model before the shell plus imports you 
 
   <a href="https://www.linkedin.com/in/urbinawarren/" class="link-transition linkedin link dib z-999 pt3 pt0-l mr2" title="LinkedIn link">
     <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"/>
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
+
   </a>
 
 
@@ -145,8 +149,7 @@ For example: If you want to preimport a model before the shell plus imports you 
 
 <p>When using django&rsquo;s shell plus command:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="">django python manage.py shell_plus</span></code></pre>
-</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">django python manage.py shell_plus</code></pre></div>
 
 <p>You will get your application&rsquo;s database models pre-imported into an interactive python shell.
 If you haven&rsquo;t used it before it is really handy and nifty for hackin&rsquo;.</p>
@@ -156,23 +159,20 @@ You Can.</p>
 
 <p>For example: If you want to preimport a model before the shell plus imports you could do:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="">SHELL_PLUS_PRE_IMPORTS = (
-</span><span style="">    (&#39;project.app.models&#39;, &#39;Car&#39;)
-</span><span style="">)</span></code></pre>
-</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">SHELL_PLUS_PRE_IMPORTS = (
+    (&#39;project.app.models&#39;, &#39;Car&#39;)
+)</code></pre></div>
 
 <p>To import after the shell plus imports you simply change the variable to SHELL_PLUS_POST_IMPORTS:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="">SHELL_PLUS_POST_IMPORTS = (
-</span><span style="">    (&#39;project.app.models&#39;, &#39;Person&#39;)
-</span><span style="">)</span></code></pre>
-</div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">SHELL_PLUS_POST_IMPORTS = (
+    (&#39;project.app.models&#39;, &#39;Person&#39;)
+)</code></pre></div></p>
 
 <p>This is helpful if you have a model name that conflicts with an app that is imported from Shell Plus.</p>
 
 <p>You can also command it to skip imports entirely:
 You pass it a list of apps and or a model from an app as so:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="">SHELL_PLUS_DONT_LOAD = [&#39;app&#39;, &#39;app1.Car&#39;]</span></code></pre>
-</div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">SHELL_PLUS_DONT_LOAD = [&#39;app&#39;, &#39;app1.Car&#39;]</code></pre></div></p>
 
 <p>So the above is ignoring app&rsquo;s imports entirely and from app1 will not import model1.</p>
 
@@ -228,7 +228,7 @@ You pass it a list of apps and or a model from an app as so:
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://wurbina.com/" >
-    &copy; 2017 Warren&#39;s Blog
+    &copy; 2018 Warren&#39;s Blog
   </a>
   
 
@@ -239,8 +239,9 @@ You pass it a list of apps and or a model from an app as so:
 
   <a href="https://www.linkedin.com/in/urbinawarren/" class="link-transition linkedin link dib z-999 pt3 pt0-l mr2" title="LinkedIn link">
     <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"/>
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
+
   </a>
 
 

@@ -42,7 +42,7 @@ There was a notebook on the table where others could write out their experiences
       <guid>https://wurbina.com/posts/django/2017-01-25-django-shellplus/</guid>
       <description>Welcome to my first blog post!
 When using django&amp;rsquo;s shell plus command:
-django python manage.py shell_plus  You will get your application&amp;rsquo;s database models pre-imported into an interactive python shell. If you haven&amp;rsquo;t used it before it is really handy and nifty for hackin&amp;rsquo;.
+django python manage.py shell_plus You will get your application&amp;rsquo;s database models pre-imported into an interactive python shell. If you haven&amp;rsquo;t used it before it is really handy and nifty for hackin&amp;rsquo;.
 But have you ever wanted to change the order in which the shell imports these apps/models? You Can.
 For example: If you want to preimport a model before the shell plus imports you could do:</description>
     </item>

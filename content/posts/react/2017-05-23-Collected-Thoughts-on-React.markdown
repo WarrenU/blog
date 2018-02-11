@@ -17,11 +17,11 @@ React components can be thought of as factories. They are objects written to cre
 to create a class based component you just need to access React.Component.
 example:
 {{<highlight javascript>}}
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
-class ExampleComponent extends Component{
+class ExampleComponent extends Component {
   render(){
-    return <div>Example!</div>;
+    return <div>Example!<div>
   }
 }
 
@@ -33,32 +33,39 @@ When you create a class based component you at minimum need to have a render fun
 
 States are react-tant to user events. When a component state is changed (on a user event for example), render gets called. In order to create a state within a class, you need to initialize it in the constructor.
 
-{{<highlight html>}}
+{{<highlight javascript>}}
+import React, {Component} from 'react'
+
 class MyReactComponent extends Component{
   constructor(props){
-    super(props);
-    this.state = {term: ''};
+    super(props)
+    this.state = {term: ''}
   }
 
   render(){
     return(
-      <input onChange={(event) => this.setState(term: event.target.value)} />;
-
-      <div>Value of input: {this.state.term}</div>
-    );
+      <input onChange={(event) => this.setState(term: event.target.value)}>
+      <div>Value of input: {this.state.term}<div>
+    )
   }
 }
 {{</highlight>}}
 
 
-You absolutely should use self closing tags with JSX: <MyComponent />. You can even pass parameters into these components: <MyComponent item={myitem} />.
+Self closing tags with JSX are sick!
 
-To implement your componetns, you basically just attach it to a class, or id etc via a selector.:
+Exhibit A:
 
-{{<highlight html>}}
-ReactDOM.render(<AppComponent1 />, document.querySelector('.container'));
+ ```<MyComponent {...props}/>```
+ 
+Exhibit B:
+
+```<MyComponent item={myitem} />```.
+
+To implement your components, attach it to a class, or id etc via a selector:
+
+{{<highlight javascript>}}
+ReactDOM.render(<AppComponent1>, document.querySelector('.container'))
 {{</highlight>}}
 
 The above code is creating an instance of the AppComponent1 and is attaching it to a class called container.
-
-These are my initial collection of thoughts. I am still learning React, but think it is very clean and fun to use.

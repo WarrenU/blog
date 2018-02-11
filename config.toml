@@ -2,7 +2,7 @@ baseURL = "https://wurbina.com/"
 publishDir = "public"
 languageCode = "en-us"
 title = "Warren's Blog"
-theme = "ananke"
+theme = "gohugo-theme-ananke"
 SectionPagesMenu = "main"
 defaultLayout = "post"
 

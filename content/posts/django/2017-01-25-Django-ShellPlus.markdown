@@ -3,21 +3,19 @@ title:  "Django Shell Plus Imports"
 date:   2017-01-25 20:19:42 -0800
 ---
 
-Welcome to my first blog post!
+The topic of this blog is about controlling import order resolution when using the django extension, shell_plus:
+[http://django-extensions.readthedocs.io/en/latest/shell_plus.html](http://django-extensions.readthedocs.io/en/latest/shell_plus.html )
 
-When using django's shell plus command:
+Shell plus is an interactive python shell that will load in your apps DB models:
 
 {{< highlight html >}}
 django python manage.py shell_plus
 {{< /highlight >}}
 
-You will get your application's database models pre-imported into an interactive python shell.
-If you haven't used it before it is really handy and nifty for hackin'.
-
-But have you ever wanted to change the order in which the shell imports these apps/models?
-You Can.
-
-For example: If you want to preimport a model before the shell plus imports you could do:
+When you do this, by default, all of your app's models will be imported.
+But, there is a way you can control which models get imported, and the order in which they do.
+For example: If you want to preimport a model/module before the shell plus imports,
+you should add the following to your configuration file in your django project:
 
 {{< highlight html >}}
 SHELL_PLUS_PRE_IMPORTS = (
@@ -32,15 +30,16 @@ SHELL_PLUS_POST_IMPORTS = (
 )
 {{< /highlight >}}
 
-This is helpful if you have a model name that conflicts with an app that is imported from Shell Plus.
+This is helpful if you have a dependency or conflicting namespace (uh-oh! ideally you wouldn't).
 
-You can also command it to skip imports entirely:
-You pass it a list of apps and or a model from an app as so:
+You can also configure shell_plus to not import parts of your app:
+Let's say we have an app called: Vehicles, which contains 2 model classes: "Car" and "Boat".
+You can configure shell plus to not load "Car" for example:
 {{< highlight html >}}
-SHELL_PLUS_DONT_LOAD = ['app', 'app1.Car']
+SHELL_PLUS_DONT_LOAD = ['vehicles.Car']
 {{< /highlight >}}
-
-So the above is ignoring app's imports entirely and from app1 will not import model1.
-
-More on shell plus can be found @ the documentation
-[http://django-extensions.readthedocs.io/en/latest/shell_plus.html](http://django-extensions.readthedocs.io/en/latest/shell_plus.html )
+In the above example, the Vehicles.Car model will not be imported, but other Models from the Vehicles app will (Boat).
+You can provide mutliples to this configuration, and even include a whole app, let's say a 'documents' app:
+{{< highlight html >}}
+SHELL_PLUS_DONT_LOAD = ['documents', 'vehicles.Car']
+{{< /highlight >}}
