@@ -1,6 +1,7 @@
 ---
 title: "React Native Install"
 date: 2018-02-10T21:44:04-08:00
+draft: true
 ---
 
 This post will cover React Native, and how to get started.

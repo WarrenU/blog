@@ -1,6 +1,7 @@
 ---
 title:  "Isolation Tank"
 date:   2017-01-29 18:30:42 -0800
+draft: true
 ---
 
 Today I went into a sensory deprivation isolation tank.

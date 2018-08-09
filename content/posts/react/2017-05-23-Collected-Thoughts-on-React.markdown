@@ -1,6 +1,7 @@
 ---
 title:  "Collected Thoughts on React"
 date:   2017-05-23 22:00:42 -0800
+draft: true
 ---
 
 Recently I have picked up a course from Udemy on React & Redux. I currently am working on making components similar to YouTube's app. It is a YouTube video search app.

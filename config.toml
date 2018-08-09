@@ -1,13 +1,12 @@
-baseURL = "https://wurbina.com/"
-publishDir = "public"
-languageCode = "en-us"
-title = "Warren's Blog"
-theme = "gohugo-theme-ananke"
-SectionPagesMenu = "main"
-defaultLayout = "post"
+baseURL="https://wurbina.com/"
+publishDir="public"
+languageCode="en-us"
+title="Warren's Blog"
+theme="gohugo-theme-ananke"
+SectionPagesMenu="main"
+defaultLayout="post"
 
 [params]
-  github = "https://github.com/WarrenU"
-  linkedin = "https://www.linkedin.com/in/urbinawarren/"
-  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  pluralizeListTitles = false
+  github="https://github.com/WarrenU"
+  linkedin="https://www.linkedin.com/in/urbinawarren/"
+  pluralizeListTitles=false
