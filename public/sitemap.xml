@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wurbina.com/posts/react/react-native-install/</loc>
-    <lastmod>2018-02-10T21:44:04-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wurbina.com/posts/react/2017-05-23-collected-thoughts-on-react/</loc>
-    <lastmod>2017-05-23T22:00:42-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wurbina.com/posts/life/2017-01-29-isolation-tank/</loc>
-    <lastmod>2017-01-29T18:30:42-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wurbina.com/posts/django/2017-01-25-django-shellplus/</loc>
     <lastmod>2017-01-25T20:19:42-08:00</lastmod>
   </url>
@@ -33,7 +18,7 @@
   
   <url>
     <loc>https://wurbina.com/posts/</loc>
-    <lastmod>2018-02-10T21:44:04-08:00</lastmod>
+    <lastmod>2017-01-25T20:19:42-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -44,7 +29,7 @@
   
   <url>
     <loc>https://wurbina.com/</loc>
-    <lastmod>2018-02-10T21:44:04-08:00</lastmod>
+    <lastmod>2017-01-25T20:19:42-08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -9,13 +9,19 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.35" />
+    <meta name="generator" content="Hugo 0.40.1" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
 
-    <link href='https://wurbina.com/dist/main.css' rel='stylesheet' type="text/css" />
+    
+    
+      <link href="/dist/css/app.ab4b67a3ea25990fa8279f3b7ef08b61.css" rel="stylesheet">
+    
+
+    
+
     
       
     
@@ -69,6 +75,8 @@ django python manage.py shell_plus When you do this, by default, all of your app
   <body class="ma0 avenir bg-near-white">
 
     
+   
+  
 
   <header>
     <div class="bg-black">
@@ -126,20 +134,22 @@ django python manage.py shell_plus When you do this, by default, all of your app
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 ph3 ph4-ns mw7">
-      <header>
-        <p class="f6 b helvetica tracked">
-          POSTS
-        </p>
-        <h1 class="f1">
-          Django Shell Plus Imports
-        </h1>
-      </header>
-      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        <p>The topic of this blog is about controlling import order resolution when using the django extension, shell_plus:
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Django Shell Plus Imports</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2017-01-25T20:19:42-08:00">January 25, 2017</time>
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>The topic of this blog is about controlling import order resolution when using the django extension, shell_plus:
 <a href="http://django-extensions.readthedocs.io/en/latest/shell_plus.html">http://django-extensions.readthedocs.io/en/latest/shell_plus.html</a></p>
 
 <p>Shell plus is an interactive python shell that will load in your apps DB models:</p>
@@ -169,58 +179,22 @@ You can configure shell plus to not load &ldquo;Car&rdquo; for example:
 In the above example, the Vehicles.Car model will not be imported, but other Models from the Vehicles app will (Boat).
 You can provide mutliples to this configuration, and even include a whole app, let&rsquo;s say a &lsquo;documents&rsquo; app:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">SHELL_PLUS_DONT_LOAD = [&#39;documents&#39;, &#39;vehicles.Car&#39;]</code></pre></div></p>
-
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
       </div>
-    </article>
-    <aside class="ph3 mt2 mt6-ns">
-      
+    </main>
+
+    <aside class="w-30-l mt6-l">
 
 
 
 
+</aside>
 
-
-
-  <div class="bg-light-gray pa3">
-    <ul>
-      <li class="list b mb3">
-        3 More Posts
-      </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/posts/react/react-native-install/" class="link ph2 pv2 db black">
-            React Native Install
-          </a>
-        </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/posts/react/2017-05-23-collected-thoughts-on-react/" class="link ph2 pv2 db black">
-            Collected Thoughts on React
-          </a>
-        </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/posts/life/2017-01-29-isolation-tank/" class="link ph2 pv2 db black">
-            Isolation Tank
-          </a>
-        </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/posts/django/2017-01-25-django-shellplus/" class="link ph2 pv2 db black o-50">
-            Django Shell Plus Imports
-          </a>
-        </li>
-      
-    </ul>
-  </div>
-
-
-    </aside>
-  </div>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
@@ -254,7 +228,10 @@ You can provide mutliples to this configuration, and even include a whole app, l
   </div>
 </footer>
 
-    <script src="https://wurbina.com/dist/app.bundle.js" async></script>
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
 
   </body>
 </html>
