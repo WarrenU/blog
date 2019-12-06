@@ -9,13 +9,19 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.35" />
+    <meta name="generator" content="Hugo 0.52" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
 
-    <link href='https://wurbina.com/dist/main.css' rel='stylesheet' type="text/css" />
+    
+    
+      <link href="/dist/css/app.ab4b67a3ea25990fa8279f3b7ef08b61.css" rel="stylesheet">
+    
+
+    
+
     
       
     
@@ -27,23 +33,8 @@
 This project can be found here: React YouTube Project
 This involves 5 components, 2 Functional React components, and 3 Class based components. This app pulls videos from YouTube using their API. There is a search bar component that will update a state and call the YouTube search api to look for videos matching the search criteria." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wurbina.com/posts/react/2017-05-23-collected-thoughts-on-react/" />
-
-
-
-<meta property="article:published_time" content="2017-05-23T22:00:42-08:00"/>
-
+<meta property="og:url" content="https://wurbina.com/posts/react/2017-05-23-collected-thoughts-on-react/" /><meta property="article:published_time" content="2017-05-23T22:00:42-08:00"/>
 <meta property="article:modified_time" content="2017-05-23T22:00:42-08:00"/>
-
-
-
-
-
-
-
-
-
-
 
 <meta itemprop="name" content="Collected Thoughts on React">
 <meta itemprop="description" content="Recently I have picked up a course from Udemy on React &amp; Redux. I currently am working on making components similar to YouTube&rsquo;s app. It is a YouTube video search app.
@@ -69,6 +60,8 @@ This involves 5 components, 2 Functional React components, and 3 Class based com
   <body class="ma0 avenir bg-near-white">
 
     
+   
+  
 
   <header>
     <div class="bg-black">
@@ -126,20 +119,22 @@ This involves 5 components, 2 Functional React components, and 3 Class based com
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 ph3 ph4-ns mw7">
-      <header>
-        <p class="f6 b helvetica tracked">
-          POSTS
-        </p>
-        <h1 class="f1">
-          Collected Thoughts on React
-        </h1>
-      </header>
-      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        <p>Recently I have picked up a course from Udemy on React &amp; Redux. I currently am working on making components similar to YouTube&rsquo;s app. It is a YouTube video search app.</p>
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Collected Thoughts on React</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2017-05-23T22:00:42-08:00">May 23, 2017</time>
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Recently I have picked up a course from Udemy on React &amp; Redux. I currently am working on making components similar to YouTube&rsquo;s app. It is a YouTube video search app.</p>
 
 <p>This project can be found here:
 <a href="https://github.com/WarrenU/ReduxSimpleStarterClone">React YouTube Project</a></p>
@@ -160,7 +155,8 @@ example:
   }
 }
 
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">ExampleComponent</span></code></pre></div></p>
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">ExampleComponent</span>
+</code></pre></div></p>
 
 <p>When you create a class based component you at minimum need to have a render function. At the end of your component you can export it so that you can then import it in your app/index.js (as an example), where your application is &lsquo;sewn&rsquo; together.</p>
 
@@ -180,7 +176,8 @@ example:
       <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Value</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">input</span><span style="color:#f92672">:</span> {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">term</span>}<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
     )
   }
-}</code></pre></div>
+}
+</code></pre></div>
 
 <p>Self closing tags with JSX are sick!</p>
 
@@ -194,67 +191,32 @@ example:
 
 <p>To implement your components, attach it to a class, or id etc via a selector:</p>
 
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppComponent1</span><span style="color:#f92672">&gt;</span>, document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;.container&#39;</span>))</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">AppComponent1</span><span style="color:#f92672">&gt;</span>, document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;.container&#39;</span>))
+</code></pre></div>
 
 <p>The above code is creating an instance of the AppComponent1 and is attaching it to a class called container.</p>
-
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
       </div>
-    </article>
-    <aside class="ph3 mt2 mt6-ns">
-      
+    </main>
+
+    <aside class="w-30-l mt6-l">
 
 
 
 
+</aside>
 
-
-
-  <div class="bg-light-gray pa3">
-    <ul>
-      <li class="list b mb3">
-        3 More Posts
-      </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/posts/react/react-native-install/" class="link ph2 pv2 db black">
-            React Native Install
-          </a>
-        </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/posts/react/2017-05-23-collected-thoughts-on-react/" class="link ph2 pv2 db black o-50">
-            Collected Thoughts on React
-          </a>
-        </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/posts/life/2017-01-29-isolation-tank/" class="link ph2 pv2 db black">
-            Isolation Tank
-          </a>
-        </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/posts/django/2017-01-25-django-shellplus/" class="link ph2 pv2 db black">
-            Django Shell Plus Imports
-          </a>
-        </li>
-      
-    </ul>
-  </div>
-
-
-    </aside>
-  </div>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://wurbina.com/" >
-    &copy; 2018 Warren&#39;s Blog
+    &copy; 2019 Warren&#39;s Blog
   </a>
   
 
@@ -282,7 +244,10 @@ example:
   </div>
 </footer>
 
-    <script src="https://wurbina.com/dist/app.bundle.js" async></script>
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
 
   </body>
 </html>
