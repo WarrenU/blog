@@ -1,5 +1,5 @@
 baseURL = "https://www.wurbina.com"
-title = "Warren's Emporium of Ideas"
+title = "wurbina"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -10,9 +10,9 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 
 [params]
-author = "Warren's"
+author = "Warren's Blog"
 keywords = "blog,developer,python,golang"
-info = ["...ideas"]
+info = [""]
 dateFormat = "January 2, 2006"
 hideFooter = true
 hideCredits = false
