@@ -20,7 +20,7 @@ To do this, I would recommend using a cloud based text editor or another collabo
 The main benefit of this is that knowledge won't be lost by verbal communication. Another is that it should
 lower the amount of time spent in meetings.
 
-![superman](superspeedreading.jpg)
+![superman](/images/superspeedreading.jpg)
 
 # Designate a Workspace
 It is important to have a workspace for you to concentrate on your work. Try and limit distractions
