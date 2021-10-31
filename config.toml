@@ -103,10 +103,10 @@ url = "https://www.linkedin.com/in/urbinawarren/"
 [languages.en]
 languageName = ":uk:"
 
-[[languages.en.menu.main]]
-name = "About"
-weight = 1
-url = "about/"
+# [[languages.en.menu.main]]
+# name = "About"
+# weight = 1
+# url = "about/"
 
 [[languages.en.menu.main]]
 name = "Blog"

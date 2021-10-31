@@ -9,6 +9,14 @@
       <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
+    <p style="text-align: left">
+      My name is Warren, and I like to program with Python and Golang. I have a bachelor's degree in Computer Game Science from UC Irvine.
+      I am especially skilled at creating web API's and have used Flask, and Django for those backends.
+      I started to learn about web development around 2015 when the MEAN stack was hot.
+      Then I learned how to use Django, and have enjoyed the brevity of python. I currently am using Flask and FastAPI.
+      I am starting this blog to share my thoughts and interesting finds while working as a backend focused engineer.
+      <p style="text-align: center;">Python, Django, Flask, FastAPI, Golang</p>
+    </p>
     {{ if reflect.IsSlice .Site.Params.info }}
     <h2>{{ range .Site.Params.info }}{{.}}<br>{{ end}}</h2>
     {{ else }}
