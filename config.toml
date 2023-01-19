@@ -1,4 +1,4 @@
-baseURL = "https://www.wurbina.com"
+baseURL = "https://warrenu.github.io"
 title = "wurbina"
 theme = "hugo-coder"
 languageCode = "en"
