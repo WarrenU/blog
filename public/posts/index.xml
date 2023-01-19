@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on wurbina</title>
+    <link>https://warrenu.github.io/posts/</link>
+    <description>Recent content in Posts on wurbina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Oct 2021 19:32:04 -0700</lastBuildDate><atom:link href="https://warrenu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Effective Remote Working</title>
+      <link>https://warrenu.github.io/posts/remote-working/</link>
+      <pubDate>Thu, 28 Oct 2021 19:32:04 -0700</pubDate>
+      
+      <guid>https://warrenu.github.io/posts/remote-working/</guid>
+      <description>In this article I will share with you some tips for working remotely.
+Setup a Single Source of Truth    Establish a readable document for you and your team to reference. Keep your documentation as up to date and as terse as possible, people won&amp;rsquo;t want to read huge multi page documents unless they are a speed reader. To do this, I would recommend using a cloud based text editor or another collaborative program.</description>
+    </item>
+    
+  </channel>
+</rss>
