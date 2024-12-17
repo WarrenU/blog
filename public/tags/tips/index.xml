@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tips on wurbina</title><link>https://warrenu.github.io/tags/tips/</link><description>Recent content in tips on wurbina</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 28 Oct 2021 19:32:04 -0700</lastBuildDate><atom:link href="https://warrenu.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml"/><item><title>Effective Remote Working</title><link>https://warrenu.github.io/posts/remote-working/</link><pubDate>Thu, 28 Oct 2021 19:32:04 -0700</pubDate><guid>https://warrenu.github.io/posts/remote-working/</guid><description>In this article I will share with you some tips for working remotely.
-Setup a Single Source of Truth Establish a readable document for you and your team to reference. Keep your documentation as up to date and as terse as possible, people won&amp;rsquo;t want to read huge multi page documents unless they are a speed reader. To do this, I would recommend using a cloud based text editor or another collaborative program.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Warren&#39;s Blog</title>
+    <link>http://localhost:1313/tags/tips/</link>
+    <description>Recent content in Tips on Warren&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Oct 2021 19:32:04 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Effective Remote Working</title>
+      <link>http://localhost:1313/posts/remote-working/</link>
+      <pubDate>Thu, 28 Oct 2021 19:32:04 -0700</pubDate>
+      <guid>http://localhost:1313/posts/remote-working/</guid>
+      <description>&lt;p&gt;In this article I will share with you some tips for working remotely.&lt;/p&gt;&#xA;&lt;h1 id=&#34;setup-a-single-source-of-truth&#34;&gt;Setup a Single Source of Truth&lt;/h1&gt;&#xA;&lt;p&gt;Establish a readable document for you and your team to reference.&#xA;Keep your documentation as up to date and as terse as possible, people won&amp;rsquo;t want to read huge multi page documents unless they are a speed reader.&#xA;To do this, I would recommend using a cloud based text editor or another collaborative program.&#xA;The main benefit of this is that knowledge won&amp;rsquo;t be lost by verbal communication. Another is that it should&#xA;lower the amount of time spent in meetings.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

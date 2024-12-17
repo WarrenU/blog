@@ -1,0 +1,11 @@
+baseURL = 'https://warrenu.github.io'
+languageCode = 'en-us'
+title = "Warren's Blog"
+theme = 'ananke'
+
+[menu]
+  [[menu.main]]
+  identifier = "resume"
+  name = "Resume"
+  url = "/docs/RedactedWarrenUrbinaResume.pdf"
+  weight = 10
