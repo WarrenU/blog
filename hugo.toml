@@ -7,5 +7,5 @@ theme = 'ananke'
   [[menu.main]]
   identifier = "resume"
   name = "Resume"
-  url = "/docs/RedactedWarrenUrbinaResume.pdf"
+  url = "/docs/warren-urbina-resume.pdf"
   weight = 10
