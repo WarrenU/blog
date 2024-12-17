@@ -1,14 +1,30 @@
 baseURL = 'https://warrenu.github.io'
 languageCode = 'en-us'
 title = "Warren's Blog"
-theme = 'ananke'
-
-[params]
-homeName = "Home"
+theme = "hugo-blog-awesome"
+enableEmoji = true
 
 [menu]
   [[menu.main]]
   identifier = "resume"
   name = "Resume"
-  url = "/docs/warren-urbina-resume.pdf"
+  url = "/resume/"  # Point to a custom page
   weight = 10
+
+  [[menu.main]]
+  name = "Blog Posts"
+  url = "/posts/"
+  weight = 1
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/warrenu"
+
+[params]
+  author.name = "Warren U"
+  author.avatar = "images/avatar.jpg"
+  author.intro = "Welcome to Warren's Blog"
+  author.description = "Warren U. is a software engineer with specialization in Python, Golang, and TypeScript."
+
+[home]
+  Title = "Recent Posts"

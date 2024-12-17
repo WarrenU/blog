@@ -2,18 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Warren&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://warrenu.github.io/</link>
     <description>Recent content on Warren&#39;s Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Dec 2024 12:32:04 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Dec 2024 12:32:04 -0700</lastBuildDate><atom:link href="https://warrenu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Effective Remote Working</title>
-      <link>http://localhost:1313/posts/remote-working/</link>
+      <link>https://warrenu.github.io/posts/remote-working/</link>
       <pubDate>Tue, 17 Dec 2024 12:32:04 -0700</pubDate>
-      <guid>http://localhost:1313/posts/remote-working/</guid>
-      <description>&lt;p&gt;Remote work is becoming more common, but it requires a different approach than traditional office work. In this article, I’ll share some tips that can help you stay productive, maintain a healthy work-life balance, and improve your remote work experience.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-set-up-a-single-source-of-truth&#34;&gt;1. Set Up a Single Source of Truth&lt;/h3&gt;&#xA;&lt;p&gt;Clear and accessible documentation is a game-changer for remote teams. Create a central place where your team can easily find important information, like project plans, updates, and guidelines. Keep it concise and up to date. People aren’t going to want to read long, detailed documents unless they absolutely have to.&lt;/p&gt;</description>
+      
+      <guid>https://warrenu.github.io/posts/remote-working/</guid>
+      
+      <description>&lt;p&gt;Remote work is becoming more common, but it requires a different approach than traditional office work. In this article, I’ll share some tips that can help you stay productive, maintain a healthy work-life balance, and improve your remote work experience.&lt;/p&gt;
+&lt;h3 id=&#34;1-set-up-a-single-source-of-truth&#34;&gt;1. Set Up a Single Source of Truth&lt;/h3&gt;
+&lt;p&gt;Clear and accessible documentation is a game-changer for remote teams. Create a central place where your team can easily find important information, like project plans, updates, and guidelines. Keep it concise and up to date. People aren’t going to want to read long, detailed documents unless they absolutely have to.&lt;/p&gt;</description>
+      
     </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://warrenu.github.io/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://warrenu.github.io/resume/</guid>
+      
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

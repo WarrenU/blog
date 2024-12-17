@@ -1,0 +1,13 @@
+{{ define "main" }}
+ <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  iframe {
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
+<iframe src="{{ "docs/warren-urbina-resume.pdf" | relURL }}" style="border: none;"></iframe>
+{{ end }}
