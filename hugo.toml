@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = "Warren's Blog"
 theme = 'ananke'
 
+[params]
+homeName = "Home"
+
 [menu]
   [[menu.main]]
   identifier = "resume"
