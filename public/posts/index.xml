@@ -6,17 +6,47 @@
     <description>Recent content in Posts on Warren&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Dec 2024 12:32:04 -0700</lastBuildDate><atom:link href="https://warrenu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://warrenu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Effective Remote Working</title>
-      <link>https://warrenu.github.io/posts/remote-working/</link>
-      <pubDate>Tue, 17 Dec 2024 12:32:04 -0700</pubDate>
+      <title>6 Quick Tips for Remote Work Success</title>
+      <link>https://warrenu.github.io/posts/2024/12/remote-working/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://warrenu.github.io/posts/remote-working/</guid>
+      <guid>https://warrenu.github.io/posts/2024/12/remote-working/</guid>
       
-      <description>&lt;p&gt;Remote work is becoming more common, but it requires a different approach than traditional office work. In this article, I’ll share some tips that can help you stay productive, maintain a healthy work-life balance, and improve your remote work experience.&lt;/p&gt;
-&lt;h3 id=&#34;1-set-up-a-single-source-of-truth&#34;&gt;1. Set Up a Single Source of Truth&lt;/h3&gt;
-&lt;p&gt;Clear and accessible documentation is a game-changer for remote teams. Create a central place where your team can easily find important information, like project plans, updates, and guidelines. Keep it concise and up to date. People aren’t going to want to read long, detailed documents unless they absolutely have to.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;6-quick-tips-for-remote-work-success&#34;&gt;6 Quick Tips for Remote Work Success&lt;/h3&gt;
+&lt;p&gt;Remote work is on the rise, but it’s not the same as working in the office. Here’s how to stay productive, balanced, and effective.&lt;/p&gt;
+&lt;h3 id=&#34;1-centralize-info&#34;&gt;1. Centralize Info&lt;/h3&gt;
+&lt;p&gt;Stop chasing down information. Use a cloud based tool like Confluence to keep key docs, updates, and guidelines in one place. Keep it simple and up to date: people sparingly read long, complicated docs.&lt;/p&gt;
+&lt;h3 id=&#34;2-create-a-work-zone&#34;&gt;2. Create a Work Zone&lt;/h3&gt;
+&lt;p&gt;Find a quiet spot for work. Set it up ergonomically to avoid strain, but don’t stress about a full office. A dedicated corner works fine.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lessons Learned from a Cascade Deletion Incident</title>
+      <link>https://warrenu.github.io/posts/2024/12/cascade-del/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://warrenu.github.io/posts/2024/12/cascade-del/</guid>
+      
+      <description>&lt;h3 id=&#34;setting-the-scene&#34;&gt;Setting the Scene&lt;/h3&gt;
+&lt;p&gt;One evening, a project manager reached out to inform me that some data appeared to be missing from our system. Upon investigating, I discovered that an unintended cascade deletion had occurred due to the use of &lt;code&gt;on_delete=models.CASCADE&lt;/code&gt;. This resulted in the deletion of not only the target data but also several related records, which were critical to the system&amp;rsquo;s integrity.&lt;/p&gt;
+&lt;h3 id=&#34;the-restoration-process&#34;&gt;The Restoration Process&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Restore from Backup:&lt;/strong&gt; I quickly connected with our Site Reliability Engineer (SRE) to retrieve the most recent data backups. After confirming the integrity of the backups, I restored them to a staging environment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delta Sync:&lt;/strong&gt; After confirming the backup’s integrity, I performed a delta restoration, syncing the backup with the current database to recover the lost data while preserving recent changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code Fixes:&lt;/strong&gt; I updated the models, replacing &lt;code&gt;models.CASCADE&lt;/code&gt; with safer options like &lt;code&gt;models.PROTECT&lt;/code&gt; or &lt;code&gt;models.SET_NULL&lt;/code&gt; to prevent accidental deletions in the future.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Be Cautious with&lt;/strong&gt; &lt;code&gt;on_delete&lt;/code&gt;: Understand the cascading impact when cleaning up or modifying attributes that affect related records.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backups Matter:&lt;/strong&gt; Regular backups are essential for quick recovery.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Test Thoroughly:&lt;/strong&gt; Ensure changes are tested with edge cases, especially when they involve data relationships.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Better Monitoring:&lt;/strong&gt; Implement more granular monitoring and alerting for destructive changes to the database.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;This experience was a wake-up call to double down on best practices, including database integrity checks, better testing, and comprehensive backups. Mistakes happen, but the goal is to learn from them and improve the system.&lt;/p&gt;</description>
       
     </item>
     

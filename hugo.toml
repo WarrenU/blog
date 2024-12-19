@@ -16,6 +16,11 @@ enableEmoji = true
   url = "/posts/"
   weight = 1
 
+  [[menu.main]]
+  name = "About Me"
+  url = "/about"
+  weight = 1
+
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/warrenu"
@@ -23,8 +28,9 @@ url = "https://github.com/warrenu"
 [params]
   author.name = "Warren U"
   author.avatar = "images/avatar.jpg"
-  author.intro = "Welcome to Warren's Blog"
-  author.description = "Warren U. is a software engineer with specialization in Python, Golang, and TypeScript."
+  author.intro = "Hi, I'm Warren a Backend/Cloud Specialist"
+  author.description = "I'm looking for a role where I can grow as an engineer while working on impactful, scalable backend systems. Collaboration and mentorship are important to me, and I’m excited to contribute to a team solving challenging, user-focused problems."
+  customCSS = ["css/custom.css"]
 
 [home]
   Title = "Recent Posts"

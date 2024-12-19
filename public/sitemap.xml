@@ -2,26 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://warrenu.github.io/posts/remote-working/</loc>
-    <lastmod>2024-12-17T12:32:04-07:00</lastmod>
+    <loc>https://warrenu.github.io/posts/2024/12/remote-working/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://warrenu.github.io/tags/best-practices/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://warrenu.github.io/tags/data-integrity/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://warrenu.github.io/tags/database/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://warrenu.github.io/tags/django/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://warrenu.github.io/posts/2024/12/cascade-del/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://warrenu.github.io/posts/</loc>
-    <lastmod>2024-12-17T12:32:04-07:00</lastmod>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warrenu.github.io/tags/remote/</loc>
-    <lastmod>2024-12-17T12:32:04-07:00</lastmod>
+    <loc>https://warrenu.github.io/tags/productivity/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://warrenu.github.io/tags/remote-work/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://warrenu.github.io/tags/restoration/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://warrenu.github.io/tags/</loc>
-    <lastmod>2024-12-17T12:32:04-07:00</lastmod>
-  </url><url>
-    <loc>https://warrenu.github.io/tags/tips/</loc>
-    <lastmod>2024-12-17T12:32:04-07:00</lastmod>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://warrenu.github.io/</loc>
-    <lastmod>2024-12-17T12:32:04-07:00</lastmod>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warrenu.github.io/tags/working/</loc>
-    <lastmod>2024-12-17T12:32:04-07:00</lastmod>
+    <loc>https://warrenu.github.io/tags/work-life-balance/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://warrenu.github.io/about/</loc>
   </url><url>
     <loc>https://warrenu.github.io/categories/</loc>
   </url><url>

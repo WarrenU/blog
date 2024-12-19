@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | Warren&#39;s Blog</title>
-<meta property="og:title" content="Posts | Warren&#39;s Blog" />
-<meta name="twitter:title" content="Posts | Warren&#39;s Blog" />
-<meta itemprop="name" content="Posts | Warren&#39;s Blog" />
-<meta name="application-name" content="Posts | Warren&#39;s Blog" />
+<title itemprop="name">Lessons Learned from a Cascade Deletion Incident | Warren&#39;s Blog</title>
+<meta property="og:title" content="Lessons Learned from a Cascade Deletion Incident | Warren&#39;s Blog" />
+<meta name="twitter:title" content="Lessons Learned from a Cascade Deletion Incident | Warren&#39;s Blog" />
+<meta itemprop="name" content="Lessons Learned from a Cascade Deletion Incident | Warren&#39;s Blog" />
+<meta name="application-name" content="Lessons Learned from a Cascade Deletion Incident | Warren&#39;s Blog" />
 <meta property="og:site_name" content="" />
 
 <meta name="description" content="">
@@ -18,20 +18,12 @@
 <meta property="og:locale" content="en-us" />
 <meta name="language" content="en-us" />
 
-  <link rel="alternate" hreflang="en" href="https://warrenu.github.io/posts/" title="" />
+  <link rel="alternate" hreflang="en" href="https://warrenu.github.io/posts/2024/12/cascade-del/" title="" />
 
 
 
 
 
-    
-    
-    
-    
-    
-    <link rel="first" href="/posts/" />
-    <link rel="last" href="/posts/" />
-    
     
     
     
@@ -39,7 +31,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2024-12-19T00:00:00Z />
     <meta property="article:published_time" content=2024-12-19T00:00:00Z />
-    <meta property="og:url" content="https://warrenu.github.io/posts/" />
+    <meta property="og:url" content="https://warrenu.github.io/posts/2024/12/cascade-del/" />
 
     
     <meta property="og:article:author" content="Warren U" />
@@ -54,14 +46,14 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "Lessons Learned from a Cascade Deletion Incident",
         "author": {
         "@type": "Person",
         "name": ""
         },
         "datePublished": "2024-12-19",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  242 ,
         "mainEntityOfPage": "True",
         "dateModified": "2024-12-19",
         "image": {
@@ -79,24 +71,34 @@
 <meta name="generator" content="Hugo 0.139.4">
 
     
-    <meta property="og:url" content="https://warrenu.github.io/posts/">
+    <meta property="og:url" content="https://warrenu.github.io/posts/2024/12/cascade-del/">
   <meta property="og:site_name" content="Warren&#39;s Blog">
-  <meta property="og:title" content="Posts">
+  <meta property="og:title" content="Lessons Learned from a Cascade Deletion Incident">
+  <meta property="og:description" content="Setting the Scene One evening, a project manager reached out to inform me that some data appeared to be missing from our system. Upon investigating, I discovered that an unintended cascade deletion had occurred due to the use of on_delete=models.CASCADE. This resulted in the deletion of not only the target data but also several related records, which were critical to the system’s integrity.
+The Restoration Process Restore from Backup: I quickly connected with our Site Reliability Engineer (SRE) to retrieve the most recent data backups. After confirming the integrity of the backups, I restored them to a staging environment. Delta Sync: After confirming the backup’s integrity, I performed a delta restoration, syncing the backup with the current database to recover the lost data while preserving recent changes. Code Fixes: I updated the models, replacing models.CASCADE with safer options like models.PROTECT or models.SET_NULL to prevent accidental deletions in the future. Lessons Learned Be Cautious with on_delete: Understand the cascading impact when cleaning up or modifying attributes that affect related records. Backups Matter: Regular backups are essential for quick recovery. Test Thoroughly: Ensure changes are tested with edge cases, especially when they involve data relationships. Better Monitoring: Implement more granular monitoring and alerting for destructive changes to the database. This experience was a wake-up call to double down on best practices, including database integrity checks, better testing, and comprehensive backups. Mistakes happen, but the goal is to learn from them and improve the system.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-19T00:00:00+00:00">
+    <meta property="article:tag" content="Django">
+    <meta property="article:tag" content="Database">
+    <meta property="article:tag" content="Restoration">
+    <meta property="article:tag" content="Data Integrity">
+    <meta property="article:tag" content="Best Practices">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
+  <meta name="twitter:title" content="Lessons Learned from a Cascade Deletion Incident">
+  <meta name="twitter:description" content="Setting the Scene One evening, a project manager reached out to inform me that some data appeared to be missing from our system. Upon investigating, I discovered that an unintended cascade deletion had occurred due to the use of on_delete=models.CASCADE. This resulted in the deletion of not only the target data but also several related records, which were critical to the system’s integrity.
+The Restoration Process Restore from Backup: I quickly connected with our Site Reliability Engineer (SRE) to retrieve the most recent data backups. After confirming the integrity of the backups, I restored them to a staging environment. Delta Sync: After confirming the backup’s integrity, I performed a delta restoration, syncing the backup with the current database to recover the lost data while preserving recent changes. Code Fixes: I updated the models, replacing models.CASCADE with safer options like models.PROTECT or models.SET_NULL to prevent accidental deletions in the future. Lessons Learned Be Cautious with on_delete: Understand the cascading impact when cleaning up or modifying attributes that affect related records. Backups Matter: Regular backups are essential for quick recovery. Test Thoroughly: Ensure changes are tested with edge cases, especially when they involve data relationships. Better Monitoring: Implement more granular monitoring and alerting for destructive changes to the database. This experience was a wake-up call to double down on best practices, including database integrity checks, better testing, and comprehensive backups. Mistakes happen, but the goal is to learn from them and improve the system.">
 
 
     
 
-    <link rel="canonical" href="https://warrenu.github.io/posts/">
-    <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Warren&#39;s Blog">
-    <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Warren&#39;s Blog">
+    <link rel="canonical" href="https://warrenu.github.io/posts/2024/12/cascade-del/">
     <link href="/style.min.670289ace1b069c8a89b358d494ebf569769b9e43d5d77a10c4a0f1233c08570.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -185,57 +187,44 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2024</h2>
+        <article>
+            <header class="header">
+                <h1 class="header-title">Lessons Learned from a Cascade Deletion Incident</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2024-12-19T00:00:00&#43;00:00" itemprop="datePublished"> Dec 19, 2024 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h3 id="setting-the-scene">Setting the Scene</h3>
+<p>One evening, a project manager reached out to inform me that some data appeared to be missing from our system. Upon investigating, I discovered that an unintended cascade deletion had occurred due to the use of <code>on_delete=models.CASCADE</code>. This resulted in the deletion of not only the target data but also several related records, which were critical to the system&rsquo;s integrity.</p>
+<h3 id="the-restoration-process">The Restoration Process</h3>
+<ol>
+<li><strong>Restore from Backup:</strong> I quickly connected with our Site Reliability Engineer (SRE) to retrieve the most recent data backups. After confirming the integrity of the backups, I restored them to a staging environment.</li>
+<li><strong>Delta Sync:</strong> After confirming the backup’s integrity, I performed a delta restoration, syncing the backup with the current database to recover the lost data while preserving recent changes.</li>
+<li><strong>Code Fixes:</strong> I updated the models, replacing <code>models.CASCADE</code> with safer options like <code>models.PROTECT</code> or <code>models.SET_NULL</code> to prevent accidental deletions in the future.</li>
+</ol>
+<h3 id="lessons-learned">Lessons Learned</h3>
+<ul>
+<li><strong>Be Cautious with</strong> <code>on_delete</code>: Understand the cascading impact when cleaning up or modifying attributes that affect related records.</li>
+<li><strong>Backups Matter:</strong> Regular backups are essential for quick recovery.</li>
+<li><strong>Test Thoroughly:</strong> Ensure changes are tested with edge cases, especially when they involve data relationships.</li>
+<li><strong>Better Monitoring:</strong> Implement more granular monitoring and alerting for destructive changes to the database.</li>
+</ul>
+<hr>
+<p>This experience was a wake-up call to double down on best practices, including database integrity checks, better testing, and comprehensive backups. Mistakes happen, but the goal is to learn from them and improve the system.</p>
 
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/2024/12/cascade-del/">Lessons Learned from a Cascade Deletion Incident</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2024-12-19T00:00:00Z">
-        19 Dec 2024
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/2024/12/remote-working/">6 Quick Tips for Remote Work Success</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2024-12-19T00:00:00Z">
-        19 Dec 2024
-        
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

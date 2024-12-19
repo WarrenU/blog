@@ -6,35 +6,90 @@
     <description>Recent content in Tags on Warren&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Dec 2024 12:32:04 -0700</lastBuildDate><atom:link href="https://warrenu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://warrenu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Remote</title>
-      <link>https://warrenu.github.io/tags/remote/</link>
-      <pubDate>Tue, 17 Dec 2024 12:32:04 -0700</pubDate>
+      <title>Best Practices</title>
+      <link>https://warrenu.github.io/tags/best-practices/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://warrenu.github.io/tags/remote/</guid>
+      <guid>https://warrenu.github.io/tags/best-practices/</guid>
       
       <description></description>
       
     </item>
     
     <item>
-      <title>Tips</title>
-      <link>https://warrenu.github.io/tags/tips/</link>
-      <pubDate>Tue, 17 Dec 2024 12:32:04 -0700</pubDate>
+      <title>Data Integrity</title>
+      <link>https://warrenu.github.io/tags/data-integrity/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://warrenu.github.io/tags/tips/</guid>
+      <guid>https://warrenu.github.io/tags/data-integrity/</guid>
       
       <description></description>
       
     </item>
     
     <item>
-      <title>Working</title>
-      <link>https://warrenu.github.io/tags/working/</link>
-      <pubDate>Tue, 17 Dec 2024 12:32:04 -0700</pubDate>
+      <title>Database</title>
+      <link>https://warrenu.github.io/tags/database/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://warrenu.github.io/tags/working/</guid>
+      <guid>https://warrenu.github.io/tags/database/</guid>
+      
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://warrenu.github.io/tags/django/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://warrenu.github.io/tags/django/</guid>
+      
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://warrenu.github.io/tags/productivity/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://warrenu.github.io/tags/productivity/</guid>
+      
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Remote Work</title>
+      <link>https://warrenu.github.io/tags/remote-work/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://warrenu.github.io/tags/remote-work/</guid>
+      
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Restoration</title>
+      <link>https://warrenu.github.io/tags/restoration/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://warrenu.github.io/tags/restoration/</guid>
+      
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Work-Life Balance</title>
+      <link>https://warrenu.github.io/tags/work-life-balance/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://warrenu.github.io/tags/work-life-balance/</guid>
       
       <description></description>
       
