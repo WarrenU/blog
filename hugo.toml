@@ -30,7 +30,7 @@ url = "https://github.com/warrenu"
   author.avatar = "images/avatar.jpg"
   author.intro = "Hi, I'm Warren a Backend/Cloud Specialist"
   author.description = "I'm looking for a role where I can grow as an engineer while working on impactful, scalable backend systems. Collaboration and mentorship are important to me, and I’m excited to contribute to a team solving challenging, user-focused problems."
-  customCSS = ["css/custom.css"]
+  goToTop = true
 
 [home]
   Title = "Recent Posts"
