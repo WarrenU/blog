@@ -5,3 +5,26 @@ body, .page-content, .post-item, .post-item-title {
 .author, .author-bio {
   max-width: none !important;
 }
+
+/* Customize the code block appearance */
+pre code {
+  font-size: 16px;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  white-space: pre-wrap; /* Ensures long lines wrap */
+}
+
+/* Add line numbers */
+pre code .line {
+  padding-left: 20px;
+}
+pre>code {
+  padding-left: none;
+  max-width: none;
+}
+
+.wrapper {
+  max-width: calc(900px - (30px * 2)) !important;
+}

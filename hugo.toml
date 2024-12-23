@@ -34,3 +34,9 @@ url = "https://github.com/warrenu"
 
 [home]
   Title = "Recent Posts"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"  # Choose a style that suits your theme (e.g., "monokai", "solarized-dark", "dracula")
+    codeFences = true  # Enables fenced code blocks
+    lineNumbers = true  # Optional: Adds line numbers to the code blocks
