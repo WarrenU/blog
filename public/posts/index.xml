@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Warren&#39;s Blog</title>
-    <link>https://warrenu.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Warren&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://warrenu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DynamoDB - Data Fragmentation</title>
-      <link>https://warrenu.github.io/posts/2024/12/dynamodb-data-fragmentation/</link>
+      <link>http://localhost:1313/posts/2024/12/dynamodb-data-fragmentation/</link>
       <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://warrenu.github.io/posts/2024/12/dynamodb-data-fragmentation/</guid>
+      <guid>http://localhost:1313/posts/2024/12/dynamodb-data-fragmentation/</guid>
       
       <description>&lt;h3 id=&#34;understanding-dynamodb-fragmentation-a-simple-use-case&#34;&gt;Understanding DynamoDB Fragmentation: A Simple Use Case&lt;/h3&gt;
 &lt;p&gt;When working with Amazon DynamoDB, fragmentation refers to the inefficient use of storage over time as data is inserted, updated, and deleted. This can impact performance and increase costs. Let&amp;rsquo;s break it down with a simple use case.&lt;/p&gt;
@@ -23,10 +23,10 @@
     
     <item>
       <title>6 Quick Tips for Remote Work Success</title>
-      <link>https://warrenu.github.io/posts/2024/12/remote-working/</link>
+      <link>http://localhost:1313/posts/2024/12/remote-working/</link>
       <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://warrenu.github.io/posts/2024/12/remote-working/</guid>
+      <guid>http://localhost:1313/posts/2024/12/remote-working/</guid>
       
       <description>&lt;h3 id=&#34;6-quick-tips-for-remote-work-success&#34;&gt;6 Quick Tips for Remote Work Success&lt;/h3&gt;
 &lt;p&gt;Remote work is on the rise, but it’s not the same as working in the office. Here’s how to stay productive, balanced, and effective.&lt;/p&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Lessons Learned from a Cascade Deletion Incident</title>
-      <link>https://warrenu.github.io/posts/2024/12/cascade-del/</link>
+      <link>http://localhost:1313/posts/2024/12/cascade-del/</link>
       <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://warrenu.github.io/posts/2024/12/cascade-del/</guid>
+      <guid>http://localhost:1313/posts/2024/12/cascade-del/</guid>
       
       <description>&lt;h3 id=&#34;setting-the-scene&#34;&gt;Setting the Scene&lt;/h3&gt;
 &lt;p&gt;One evening, a project manager reached out to inform me that some data appeared to be missing from our system. Upon investigating, I discovered that an unintended cascade deletion had occurred due to the use of &lt;code&gt;on_delete=models.CASCADE&lt;/code&gt;. This resulted in the deletion of not only the target data but also several related records, which were critical to the system&amp;rsquo;s integrity.&lt;/p&gt;
@@ -61,6 +61,21 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;This experience was a wake-up call to double down on best practices, including database integrity checks, better testing, and comprehensive backups. Mistakes happen, but the goal is to learn from them and improve the system.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/2024/12/multi-tenancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2024/12/multi-tenancy/</guid>
+      
+      <description>&lt;p&gt;title: &amp;ldquo;Simplifying Multitenancy in Django with a Custom ORM&amp;rdquo;
+date: &amp;ldquo;2024-12-30&amp;rdquo;
+description: &amp;ldquo;An intuitive approach to implementing multitenancy in Django using a mixin class for PostgreSQL.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Managing multitenant applications can be challenging, especially when handling tenant-specific data efficiently. I recently implemented a solution in Django that made a PostgreSQL database multitenant, leveraging a custom Django ORM implementation. Here’s how it works and why it’s intuitive for developers.&lt;/p&gt;
+&lt;p&gt;The Multitenancy Challenge&lt;/p&gt;</description>
       
     </item>
     
