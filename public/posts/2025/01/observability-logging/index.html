@@ -3,35 +3,27 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | Warren&#39;s Blog</title>
-<meta property="og:title" content="Posts | Warren&#39;s Blog" />
-<meta name="twitter:title" content="Posts | Warren&#39;s Blog" />
-<meta itemprop="name" content="Posts | Warren&#39;s Blog" />
-<meta name="application-name" content="Posts | Warren&#39;s Blog" />
+<title itemprop="name">Understanding Logging and Observability in Modern Applications | Warren&#39;s Blog</title>
+<meta property="og:title" content="Understanding Logging and Observability in Modern Applications | Warren&#39;s Blog" />
+<meta name="twitter:title" content="Understanding Logging and Observability in Modern Applications | Warren&#39;s Blog" />
+<meta itemprop="name" content="Understanding Logging and Observability in Modern Applications | Warren&#39;s Blog" />
+<meta name="application-name" content="Understanding Logging and Observability in Modern Applications | Warren&#39;s Blog" />
 <meta property="og:site_name" content="" />
 
-<meta name="description" content="">
-<meta itemprop="description" content="" />
-<meta property="og:description" content="" />
-<meta name="twitter:description" content="" />
+<meta name="description" content="logging and observability">
+<meta itemprop="description" content="logging and observability" />
+<meta property="og:description" content="logging and observability" />
+<meta name="twitter:description" content="logging and observability" />
 
 <meta property="og:locale" content="en-us" />
 <meta name="language" content="en-us" />
 
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2025/01/observability-logging/" title="" />
 
 
 
 
 
-    
-    
-    
-    
-    
-    <link rel="first" href="/posts/" />
-    <link rel="last" href="/posts/" />
-    
     
     
     
@@ -39,7 +31,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2025-01-16T00:00:00Z />
     <meta property="article:published_time" content=2025-01-16T00:00:00Z />
-    <meta property="og:url" content="http://localhost:1313/posts/" />
+    <meta property="og:url" content="http://localhost:1313/posts/2025/01/observability-logging/" />
 
     
     <meta property="og:article:author" content="Warren U" />
@@ -54,14 +46,14 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "Understanding Logging and Observability in Modern Applications",
         "author": {
         "@type": "Person",
         "name": ""
         },
         "datePublished": "2025-01-16",
-        "description": "",
-        "wordCount":  0 ,
+        "description": "logging and observability",
+        "wordCount":  400 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-01-16",
         "image": {
@@ -79,24 +71,31 @@
 <meta name="generator" content="Hugo 0.139.4">
 
     
-    <meta property="og:url" content="http://localhost:1313/posts/">
+    <meta property="og:url" content="http://localhost:1313/posts/2025/01/observability-logging/">
   <meta property="og:site_name" content="Warren&#39;s Blog">
-  <meta property="og:title" content="Posts">
+  <meta property="og:title" content="Understanding Logging and Observability in Modern Applications">
+  <meta property="og:description" content="logging and observability">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-16T00:00:00+00:00">
+    <meta property="article:tag" content="Logging">
+    <meta property="article:tag" content="Observability">
+    <meta property="article:tag" content="Devops">
+    <meta property="article:tag" content="Software Engineering">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
+  <meta name="twitter:title" content="Understanding Logging and Observability in Modern Applications">
+  <meta name="twitter:description" content="logging and observability">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/posts/">
-    <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Warren&#39;s Blog">
-    <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Warren&#39;s Blog">
+    <link rel="canonical" href="http://localhost:1313/posts/2025/01/observability-logging/">
     <link href="/style.min.16c30450e4889813e122deeb8ce7a3a05246cbabb09662db22d93993735c043c.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -184,133 +183,68 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2025</h2>
+        <article>
+            <header class="header">
+                <h1 class="header-title">Understanding Logging and Observability in Modern Applications</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-01-16T00:00:00&#43;00:00" itemprop="datePublished"> Jan 16, 2025 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>Building reliable applications goes beyond writing code that works. As systems grow in complexity, understanding what’s happening inside your application becomes critical. This is where logging and observability come in. In this post, we&rsquo;ll explore these concepts, why they matter, and how you can improve them in your projects.</p>
+<h2 id="what-is-logging">What Is Logging?</h2>
+<p><strong>Logging</strong> is the practice of recording events, errors, and other runtime information from your application. These records, or logs, are crucial for understanding system behavior and diagnosing issues.</p>
+<h3 id="common-types-of-logs">Common Types of Logs:</h3>
+<ul>
+<li><strong>Error Logs:</strong> Capture unexpected errors or failures.</li>
+<li><strong>Access Logs:</strong> Record user interactions or API calls.</li>
+<li><strong>Debug Logs:</strong> Provide detailed, low-level information for developers.</li>
+<li><strong>Event Logs:</strong> Track specific actions or events within the system.</li>
+</ul>
+<h3 id="tips-for-effective-logging">Tips for Effective Logging:</h3>
+<ol>
+<li><strong>Be consistent:</strong> Use a standardized format, such as JSON, for logs.</li>
+<li><strong>Log context:</strong> Include relevant details like timestamps, user IDs, or request IDs.</li>
+<li><strong>Avoid overlogging:</strong> Log what’s useful, not everything.</li>
+<li><strong>Protect sensitive data:</strong> Mask or exclude personally identifiable information (PII).</li>
+</ol>
+<h2 id="what-is-observability">What Is Observability?</h2>
+<p><strong>Observability</strong> goes beyond logging. It’s about understanding the internal state of a system based on the data it generates, like logs, metrics, and traces. Observability enables you to answer questions about your application’s health and performance without additional code changes.</p>
+<h3 id="the-three-pillars-of-observability">The Three Pillars of Observability:</h3>
+<ol>
+<li><strong>Logs:</strong> Provide detailed, event-specific data.</li>
+<li><strong>Metrics:</strong> Summarize performance data, such as response times or CPU usage.</li>
+<li><strong>Traces:</strong> Show the lifecycle of a request as it moves through different parts of the system.</li>
+</ol>
+<h3 id="benefits-of-observability">Benefits of Observability:</h3>
+<ul>
+<li><strong>Faster debugging:</strong> Quickly identify and resolve issues.</li>
+<li><strong>Proactive monitoring:</strong> Detect anomalies before they become critical.</li>
+<li><strong>Improved performance:</strong> Spot bottlenecks and optimize resources.</li>
+</ul>
+<h2 id="practical-steps-to-improve-logging-and-observability">Practical Steps to Improve Logging and Observability</h2>
+<ol>
+<li><strong>Choose the Right Tools:</strong> Use platforms like Elasticsearch, Grafana, or Datadog for centralized logging and monitoring.</li>
+<li><strong>Implement Structured Logging:</strong> Use key-value pairs for logs to make them easier to query.</li>
+<li><strong>Adopt Distributed Tracing:</strong> Tools like OpenTelemetry can help you trace requests across microservices.</li>
+<li><strong>Set Alerts:</strong> Configure alerts for key metrics and thresholds to catch issues early.</li>
+<li><strong>Regularly Review Logs:</strong> Schedule time to analyze logs and improve their quality.</li>
+</ol>
+<h2 id="wrapping-up">Wrapping Up</h2>
+<p>Effective logging and observability are essential for building reliable, maintainable applications. They help your team stay informed, respond quickly to issues, and deliver a better experience for your users. Start small by improving your logging practices and adopting tools for centralized observability. Over time, you’ll gain deeper insights into your system and greater confidence in its stability.</p>
 
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/2025/01/observability-logging/">Understanding Logging and Observability in Modern Applications</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-01-16T00:00:00Z">
-        16 Jan 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/2025/01/graphql-go-gqlgen/">Setting Up a GraphQL API with Golang and GQLGen</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-01-10T00:00:00Z">
-        10 Jan 2025
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2024</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/2024/12/multi-tenancy/">Multitenancy in Django with a Custom ORM</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2024-12-30T00:00:00Z">
-        30 Dec 2024
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/2024/12/dynamodb-data-fragmentation/">DynamoDB - Data Fragmentation</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2024-12-23T00:00:00Z">
-        23 Dec 2024
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/2024/12/cascade-del/">Lessons Learned from a Cascade Deletion Incident</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2024-12-19T00:00:00Z">
-        19 Dec 2024
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/2024/12/remote-working/">6 Quick Tips for Remote Work Success</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2024-12-19T00:00:00Z">
-        19 Dec 2024
-        
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 
